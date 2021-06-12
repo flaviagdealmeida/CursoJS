@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap');
+:root{
+    --primary-color:rgb(13,106,134);
+    --primary-color-dark:rgb(7, 73, 93);
+}
+
+body{
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+
+}
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.container {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+   
+}
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form input{
+      font-size: 20px;
+      height: 50px;
+      padding: 0 20px;
+}
+
+form button{
+    background-color: var(--primary-color);
+    border:none;
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+form button:hover{
+    background-color:  var(--primary-color-dark);
+}
+
+form input:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+form input:hover{
+    outline: 1px solid var(--primary-color);
+}
+
+.resultado, .bad{
+    background-color: rgb(186, 240, 207);
+    padding: 10px 20px;
+}
+
+
+.bad{
+    background-color:rgb(170, 16, 16);
+    color: white;
+}
