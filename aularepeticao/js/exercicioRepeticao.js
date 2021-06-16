@@ -1,8 +1,8 @@
 const elementos =[
-    {tag: 'p', texto: 'Qualquer coisa'},
-    {tag: 'div', texto: 'Coisa 1'},
-    {tag: 'section', texto: 'Coisa 2'},
-    {tag: 'footer', texto: 'Coisa 3'},
+    {tag: 'p', texto: 'Qualquer coisa', id: 1},
+    {tag: 'div', texto: 'Coisa 1', id: 2},
+    {tag: 'section', texto: 'Coisa 2', id: 3},
+    {tag: 'footer', texto: 'Coisa 3',id: 4},
 ];
 
 const container = document.querySelector('.container');
@@ -35,3 +35,10 @@ for (const p of ps) {
     p.style.color = fontColor;
     p.style.padding = padding;
 }
+
+let total = 0;
+elementos.forEach(element => {
+    total += element.id;
+});
+
+console.log(total);
